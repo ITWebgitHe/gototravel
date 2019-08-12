@@ -4,7 +4,7 @@
     <swiper-slide v-for="item of swiperList" :key="item.id" >
    <img class="swiper-img" :src="item.imgUrl" />
 		</swiper-slide>
-    <div class="swiper-pagination"  slot="pagination"></div>
+    <div class="swiper-pagination" slot="pagination"></div>
    
   </swiper>
 	</div>
@@ -16,8 +16,9 @@
 		data(){
 		return{
       swiperOption: {
+				 autoplay: 3000,
 				loop:true,
-        autoplay: 3000,
+       
         pagination: '.swiper-pagination',
      
 		},
@@ -30,7 +31,7 @@
 			imgUrl:
 	"//mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/b72df47942fb28fcd7bf481f01e785f5.jpg"
 		},{
-			id:'0002',
+			id:'0003',
 			imgUrl:
 			"http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/a31023dce497dfebeaced802008c6209.jpg"
 		}
