@@ -29,7 +29,7 @@
 			iconList:[{
 				id:'0001',
 				imgUrl:"http://s.qunarzz.com/homenode/images/touchheader/hotel.png",
-			  text:"酒店"
+			  text:"酒店的美景很多"
 			},{
 					id:'0002',
 				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
@@ -37,37 +37,37 @@
 			},
 			{
 					id:'0003',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/package.png",
 				text:"度假"
 			},
 			{
 					id:'0004',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/piao.png",
 				text:"火车票"
 			},
 			{
 					id:'0005',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/group.png",
 				text:"景点门票"
 			},
 			{
 					id:'0006',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/inn.png",
 				text:"特事酒店"
 			},
 			{
 					id:'0007',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/haiwai.png",
 				text:"海外酒店"
 			},
 			{
 					id:'0008',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"////s.qunarzz.com/homenode/images/touchheader/bargainflight.png",
 				text:"客栈"
 			},
 			{
 					id:'0009',
-				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/flight.png",
+				imgUrl:"//s.qunarzz.com/homenode/images/touchheader/kezhan.png",
 				text:"客栈"
 			}
 		
