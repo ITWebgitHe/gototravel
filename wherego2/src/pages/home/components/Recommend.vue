@@ -3,11 +3,9 @@
     <div class="title">热销推荐</div>
     <ul>
       <li
-        
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
-       
       >
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
@@ -23,37 +21,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data(){
-		return{
-			recommendList:[
-				{
-				id:'0001',
-				imgUrl:"https://imgs.qunarzz.com/sight/p0/201305/31/956e01092f573b9cc8d65eac.jpg_256x160_9a387fdb.jpg",
-				title:'鸽子窝公园',
-				desc:'来这里欣赏红日浴海'
-			},
-				{
-				id:'0002',
-				imgUrl:"https://imgs.qunarzz.com/sight/p0/201305/31/956e01092f573b9cc8d65eac.jpg_256x160_9a387fdb.jpg",
-				title:'鸽子窝公园',
-				desc:'来这里欣赏红日浴海'
-			},
-				{
-				id:'0003',
-				imgUrl:"https://imgs.qunarzz.com/sight/p0/201305/31/956e01092f573b9cc8d65eac.jpg_256x160_9a387fdb.jpg",
-				title:'鸽子窝公园',
-				desc:'来这里欣赏红日浴海'
-			},
-				{
-				id:'0004',
-				imgUrl:"https://imgs.qunarzz.com/sight/p0/201305/31/956e01092f573b9cc8d65eac.jpg_256x160_9a387fdb.jpg",
-				title:'鸽子窝公园',
-				desc:'来这里欣赏红日浴海'
-			},
-			
-		
-			]
-		}
+  props:{
+		list:Array
 	}
 }
 </script>
