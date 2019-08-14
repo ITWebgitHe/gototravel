@@ -33,8 +33,10 @@
 		activated(){
 		window.addEventListener("scroll",this.handleSCroll)
 		},
+		deactivated(){
+			window.removeEventListener("scroll",this.handleSCroll)
+		},
 		methods:{
-			
 			handleSCroll(){
 				const top = document.documentElement.scrollTop
 				if( top > 60){
