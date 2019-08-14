@@ -15,8 +15,13 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
   export default {
 		name:"HomeHeader",
+		computed:{
+			...mapState(['city']),
+			// ...mapGetters(['doubleCity'])
+		},
 		props:{
 			city:String
 		}
@@ -32,12 +37,12 @@
 		 color:#fff;
 	 }
 		.header-left{
-			width: 0.64rem;
+			width: .64rem;
 			float:left;
 		}
 		.back-icon{
 			text-align: center;
-		font-size:.5rem;	
+		font-size:.4rem;	
 		}
 	 .header-input{
 		 flex:1;
@@ -52,7 +57,8 @@
 	 }
 	 .header-right{
 		 color:#fff;
-		 width:1.24rem;
+		 padding:0 .1rem;
+		 min-width:1.04rem;
 		 float: right;
 		 text-align:center;
 	 }
