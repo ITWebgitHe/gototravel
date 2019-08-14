@@ -21,9 +21,6 @@ import {mapState} from 'vuex'
 		computed:{
 			...mapState(['city']),
 			// ...mapGetters(['doubleCity'])
-		},
-		props:{
-			city:String
 		}
   }
 </script>

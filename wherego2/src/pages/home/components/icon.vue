@@ -55,6 +55,7 @@
 		 overflow: hidden;
 		 float:left;
 		 width:25%;
+		 margin-top:.24rem;
 		 padding-bottom: 25%;
 		
 		position: relative;
