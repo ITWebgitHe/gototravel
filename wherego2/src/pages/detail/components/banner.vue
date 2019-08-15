@@ -3,20 +3,22 @@
 	<div class="banner" @click="handleBannerClick">
      <img 
 		 class="banner-img"
-		 src="https://imgs.qunarzz.com/p/tts6/1801/32/c971d7ae944fce02.jpg_r_390x260x90_b945d4e1.jpg" alt="" />
+		 :src="bannerImg" alt="" />
 		 <div class="banner-info">
 			 <div class="banner-title">
-				 丽江大理丨海景温泉（西双版纳/香格里拉/泸沽湖
+				{{this.sightName}}
 				 </div>
 			  <div class="banner-number">
-					<span class="iconfont banner-icon">&#xe604;</span>  39</div>
+					<span class="iconfont banner-icon">&#xe604;</span>  
+					{{this.bannerImgs.length}}
+					</div>
 					
 		 </div>
 	</div>
 	<CommonGallary 
 	@close="handleGallaryClose"
 	v-show="showGallary"
-	:imgs="imgs"/>
+	:imgs="bannerImgs"/>
 </div>
 </template>
 
@@ -24,14 +26,17 @@
 import CommonGallary from 'common/gallary/Gallary'
 	export default {
 		name:'DetailBanner',
+		props:{
+			sightName:String,
+			bannerImg:String,
+			bannerImgs:Array
+		},
 		components:{
 			CommonGallary
 		},
 		data(){
 			return{
 				showGallary:false,
-				imgs:['http://imgs.qunarzz.com/p/tts2/1801/3d/c700236a32312702.jpg_r_390x260x90_b372c481.jpg',
-						'https://imgs.qunarzz.com/p/tts9/1801/b2/c87d7808e48e2202.jpg_r_390x260x90_247961ac.jpg']
 			}
 		},
 		methods:{

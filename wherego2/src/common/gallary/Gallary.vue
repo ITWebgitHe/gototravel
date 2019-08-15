@@ -17,9 +17,7 @@
 			imgs:{
 				type:Array,
 				default(){
-					return [
-						
-					]
+					return []
 				}
 			}
 		},
